@@ -216,8 +216,8 @@ section{position:relative;}
 .section-border-top{border-top:1px solid var(--border);}
 
 /* ---------- service cards ---------- */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
 
 .card{
   background:var(--surface);
@@ -274,7 +274,7 @@ section{position:relative;}
   position:relative;
   overflow:hidden;
 }
-.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;}
+.two-col{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:60px;align-items:center;}
 .two-col.reverse{grid-template-columns:.9fr 1.1fr;}
 .two-col.reverse .panel{order:-1;}
 
@@ -341,11 +341,12 @@ section{position:relative;}
 .reveal[data-split]{opacity:1;transform:none;}
 
 /* ---------- forms ---------- */
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.form-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;}
 .field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px;}
 .field.full{grid-column:1 / -1;}
 .field label{font-size:.85rem;font-weight:600;color:var(--text-muted);}
 .field input,.field select,.field textarea{
+  width:100%;
   background:var(--bg);
   border:1px solid var(--border-strong);
   border-radius:var(--radius-sm);
@@ -386,7 +387,7 @@ section{position:relative;}
   border-bottom:1px solid var(--border);padding:18px 0;position:sticky;top:0;background:rgba(8,11,18,.9);backdrop-filter:blur(14px);z-index:20;
 }
 .admin-topbar .container{display:flex;align-items:center;justify-content:space-between;}
-.admin-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:26px;padding:36px 0 80px;}
+.admin-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:26px;padding:36px 0 80px;}
 .admin-list{display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow:auto;padding-right:6px;}
 .admin-item{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);
