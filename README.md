@@ -29,7 +29,18 @@ Datos ya configurados:
 
 Pendiente por reemplazar:
 
-- Enlace de LinkedIn (actualmente `#` en el pie de página) → URL real de la empresa.
+- Enlace de LinkedIn (actualmente `#` en el pie de página) → cuando crees la página de empresa en LinkedIn, reemplaza el `href="#"` del ícono de LinkedIn en el footer de cada página por su URL.
+
+## Logo de marca
+
+En `assets/logo/` están los archivos listos para usar fuera del sitio (redes sociales, documentos, firma de correo):
+
+- `mark.svg` / `mark-512.png` — ícono cuadrado con fondo en gradiente. **Este es el que debes subir como foto de perfil al crear la página de LinkedIn** (funciona igual para WhatsApp Business, Instagram, etc.).
+- `mark-transparent.svg` / `mark-transparent-512.png` — solo el símbolo, sin fondo, para ponerlo sobre superficies de color.
+- `wordmark-light.svg` / `wordmark-light-1400.png` — ícono + "GUBERNARE" en texto claro, para fondos oscuros (portadas, presentaciones oscuras).
+- `wordmark-dark.svg` / `wordmark-dark-1400.png` — ícono + "GUBERNARE" en texto oscuro, para fondos claros (documentos, letterhead, banner de LinkedIn).
+
+El favicon del sitio (`assets/favicon.svg`) usa el mismo símbolo.
 
 ## Cómo publicar noticias
 

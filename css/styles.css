@@ -143,6 +143,7 @@ section{position:relative;}
   color:#04101a;font-weight:800;font-size:1rem;
   box-shadow:0 6px 18px -6px rgba(108,107,245,.6);
 }
+.brand-mark svg{width:58%;height:58%;}
 .brand small{display:block;font-size:.6rem;font-weight:600;letter-spacing:.14em;color:var(--text-muted);text-transform:uppercase;}
 
 .nav-links{display:flex;align-items:center;gap:2px;}
