@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  var CONTACT_EMAIL = 'contacto@gubernare.cl';
+  var CONTACT_EMAIL = 'gubernar@gubernare.cl';
 
   document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById('contactForm');

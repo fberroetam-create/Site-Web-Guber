@@ -19,15 +19,17 @@ data/noticias.json   Noticias publicadas (fuente de verdad para todos los visita
 .htaccess              Cache y compresión para Apache/Hostinger
 ```
 
-## Antes de publicar — datos a reemplazar
+## Antes de publicar — datos de contacto
 
-El sitio se generó con datos de contacto **de ejemplo**. Reemplace lo
-siguiente antes de publicar (búsqueda global en el proyecto):
+Datos ya configurados:
 
-- `contacto@gubernare.cl` → correo real de contacto.
-- `56900000000` (enlaces de WhatsApp) → número real, formato `56 9 XXXX XXXX`.
+- Correo: `gubernar@gubernare.cl`
+- WhatsApp: `+56 9 4205 4080`
+- Clave del panel de noticias (`js/admin.js`, `ADMIN_PASSPHRASE`): `Fer1991ando`
+
+Pendiente por reemplazar:
+
 - Enlace de LinkedIn (actualmente `#` en el pie de página) → URL real de la empresa.
-- Clave del panel de noticias en `js/admin.js` (`ADMIN_PASSPHRASE`, por defecto `Gubernare2026`) → cámbiela por una propia.
 
 ## Cómo publicar noticias
 

@@ -4,7 +4,7 @@
 (function () {
   'use strict';
 
-  var ADMIN_PASSPHRASE = 'Gubernare2026';
+  var ADMIN_PASSPHRASE = 'Fer1991ando';
   var AUTH_KEY = 'gubernare_admin_authed';
 
   var state = { items: [], editingId: null };
