@@ -8,16 +8,17 @@ de archivos a Hostinger o cualquier hosting estático.
 
 ```
 index.html         Inicio
-servicios.html      Detalle de las 3 líneas de servicio
-nosotros.html        Modelo de negocio y forma de operar
-noticias.html       Listado de noticias
+servicios.html      Detalle de las 2 líneas de servicio
+nosotros.html        Origen del nombre, modelo de negocio y forma de operar
 contacto.html         Formulario e información de contacto
-admin.html           Panel para publicar noticias (ver abajo)
 css/styles.css       Estilos
-js/                   Scripts (nav, animaciones, noticias, formulario, admin)
-data/noticias.json   Noticias publicadas (fuente de verdad para todos los visitantes)
+js/                   Scripts (nav, animaciones, formulario)
 .htaccess              Cache y compresión para Apache/Hostinger
 ```
+
+> Esta versión no incluye la sección de Noticias ni su panel de
+> administración (se quitaron del sitio; el código puede recuperarse
+> del historial de git si se necesita más adelante).
 
 ## Antes de publicar — datos de contacto
 
@@ -25,7 +26,6 @@ Datos ya configurados:
 
 - Correo: `gubernar@gubernare.cl`
 - WhatsApp: `+56 9 4205 4080`
-- Clave del panel de noticias (`js/admin.js`, `ADMIN_PASSPHRASE`): `Fer1991ando`
 
 Pendiente por reemplazar:
 
@@ -42,27 +42,10 @@ En `assets/logo/` están los archivos listos para usar fuera del sitio (redes so
 
 El favicon del sitio (`assets/favicon.svg`) usa el mismo símbolo.
 
-## Cómo publicar noticias
-
-El sitio es 100% estático: no hay servidor ni base de datos, así que la
-"fuente de verdad" que ven **todos** los visitantes es el archivo
-`data/noticias.json`.
-
-1. Abra `admin.html` en el sitio ya publicado (o en local) e ingrese con la clave de administración.
-2. Agregue, edite o elimine noticias. Los cambios se guardan automáticamente en este navegador (borrador local) y puede previsualizarlos navegando el resto del sitio en el mismo navegador.
-3. Cuando esté conforme, presione **"Exportar noticias.json"** — descarga el archivo actualizado.
-4. Suba ese archivo a su hosting reemplazando `data/noticias.json` (por FTP, el administrador de archivos de Hostinger, o subiéndolo al repositorio si despliega desde Git).
-5. Los visitantes verán las noticias actualizadas de inmediato (sin caché, ver `.htaccess`).
-
-> El panel de administración es una protección básica pensada para evitar
-> ediciones accidentales, no un sistema de autenticación seguro: la clave
-> vive en el código fuente del sitio. No la use para contenido sensible.
-
 ## Despliegue
 
 1. Suba el contenido completo de esta carpeta (incluyendo `.htaccess`) a la raíz de su hosting.
-2. Verifique que `data/noticias.json` haya quedado accesible en `https://sudominio.cl/data/noticias.json`.
-3. Ante cada cambio de CSS/JS, suba un cache-buster nuevo (cambie `?v=20260902` por la fecha del despliegue en los archivos HTML) para evitar que el navegador sirva versiones antiguas.
+2. Ante cada cambio de CSS/JS, suba un cache-buster nuevo (cambie `?v=20260902` por la fecha del despliegue en los archivos HTML) para evitar que el navegador sirva versiones antiguas.
 
 ## Formulario de contacto
 
