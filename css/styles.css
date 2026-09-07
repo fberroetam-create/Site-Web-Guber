@@ -428,6 +428,52 @@ section{position:relative;}
 .modal .news-meta{margin-bottom:18px;}
 .modal-body p{white-space:pre-line;}
 
+/* ---------- projects list (accordion) ---------- */
+.proj-list{display:flex;flex-direction:column;gap:14px;}
+.proj-item{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  overflow:hidden;transition:border-color .3s,background .3s;
+}
+.proj-item[open]{border-color:var(--border-strong);background:var(--surface-strong);}
+.proj-summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;
+  padding:22px 26px;
+}
+.proj-summary::-webkit-details-marker{display:none;}
+.proj-summary::marker{content:'';}
+.proj-icon{
+  width:46px;height:46px;border-radius:13px;flex:none;
+  background:var(--gradient-1);color:#04101a;
+  display:flex;align-items:center;justify-content:center;
+}
+.proj-icon svg{width:22px;height:22px;}
+.proj-summary-text{flex:1;min-width:0;}
+.proj-summary-text h3{margin:0 0 4px;font-size:1.05rem;font-family:'Inter',sans-serif;font-weight:600;}
+.proj-summary-text p{margin:0;font-size:.88rem;color:var(--text-muted);}
+.proj-chevron{flex:none;width:20px;height:20px;color:var(--text-faint);transition:transform .3s var(--ease);}
+.proj-item[open] .proj-chevron{transform:rotate(180deg);color:var(--accent);}
+.proj-body{padding:0 26px 30px;}
+.proj-body p{font-size:.92rem;margin-bottom:18px;}
+.proj-body-label{
+  font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;display:block;
+}
+.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius-sm);}
+.norm-table{width:100%;min-width:520px;border-collapse:collapse;font-size:.85rem;}
+.norm-table th{
+  text-align:left;padding:11px 16px;color:var(--text-muted);font-weight:600;
+  font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;
+  background:var(--bg-elevated);border-bottom:1px solid var(--border-strong);white-space:nowrap;
+}
+.norm-table td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:top;}
+.norm-table tr:last-child td{border-bottom:none;}
+.norm-table td.scope-tag{white-space:nowrap;}
+.scope-tag span{
+  display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;
+  padding:4px 10px;border-radius:999px;border:1px solid var(--border-strong);color:var(--text-muted);
+}
+.scope-tag span.intl{color:var(--accent);border-color:rgba(45,212,238,.35);}
+
 /* ---------- project lifecycle flow ---------- */
 .flow{display:flex;align-items:flex-start;gap:0;margin-top:12px;}
 .flow-step{flex:1;min-width:0;text-align:center;padding:0 10px;}
