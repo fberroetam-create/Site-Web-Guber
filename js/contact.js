@@ -41,7 +41,9 @@
       window.location.href = mailto;
 
       if (status) {
-        status.textContent = 'Se abrió su cliente de correo con el mensaje pre-cargado. Si no ocurre nada, escríbanos directamente a ' + CONTACT_EMAIL + '.';
+        var msg = 'Se abrió su cliente de correo con el mensaje pre-cargado. Si no ocurre nada, escríbanos directamente a ';
+        if (window.GUBERNARE_I18N) msg = window.GUBERNARE_I18N.t(msg);
+        status.textContent = msg + CONTACT_EMAIL + '.';
         status.classList.add('show', 'ok');
       }
     });
