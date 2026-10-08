@@ -16,7 +16,7 @@
     'Nosotros — Gubernare': 'About Us — Gubernare',
     'Conozca a Servicios Tecnológicos Gubernare SpA: el origen de nuestro nombre y la metodología ágil con la que gobernamos proyectos end-to-end.': 'Meet Servicios Tecnológicos Gubernare SpA: the origin of our name and the agile methodology we use to govern projects end to end.',
     'Proyectos — Gubernare': 'Projects — Gubernare',
-    'Sistemas y proyectos que Gubernare diseña e integra: CCTV, control de acceso, data center, redes, fotovoltaica y más.': 'Systems and projects Gubernare designs and integrates: CCTV, access control, data centers, networks, photovoltaics and more.',
+    'Sistemas y proyectos en los que Gubernare asesora y acompaña: CCTV, control de acceso, data center, redes, fotovoltaica y más.': 'Systems and projects Gubernare advises on and supports: CCTV, access control, data centers, networks, photovoltaics and more.',
     'Servicios — Gubernare': 'Services — Gubernare',
     'Consultoría de gestión e ingeniería e integración tecnológica en terreno. Conozca en detalle las dos líneas de servicio de Gubernare.': 'Management and engineering consulting and on-site technology integration. Learn about Gubernare\'s two service lines in detail.',
 
@@ -66,7 +66,7 @@
     /* --- index --- */
     'Consultoría e Integración Tecnológica': 'Consulting & Technology Integration',
     'Ingeniería y tecnología para instituciones que exigen resultados.': 'Engineering and technology for institutions that demand results.',
-    'Somos Gubernare: una consultora tecnológica, especializada en proyectos para empresas privadas, organismos del Estado, comunidades y particulares. Diseñamos, integramos y proveemos las soluciones que su operación necesita.': 'We are Gubernare: a technology consultancy specialized in projects for private companies, government agencies, communities and individuals. We design, integrate and provide the solutions your operation needs.',
+    'Somos Gubernare: una consultora tecnológica, especializada en proyectos para empresas privadas, organismos del Estado, comunidades y particulares. Asesoramos y acompañamos el diseño y la integración de las soluciones que su operación necesita.': 'We are Gubernare: a technology consultancy specialized in projects for private companies, government agencies, communities and individuals. We advise on and support the design and integration of the solutions your operation needs.',
     'Conversemos su proyecto': 'Let\'s discuss your project',
     'Ver servicios': 'View services',
     'Empresas privadas': 'Private companies',
@@ -144,8 +144,8 @@
     'Ir a contacto': 'Go to contact',
 
     /* --- proyectos --- */
-    'Sistemas que diseñamos, integramos y ponemos en marcha': 'Systems we design, integrate and commission',
-    'Desde CCTV y control de acceso hasta data center y energía fotovoltaica: estos son algunos de los sistemas que ejecutamos de forma end-to-end.': 'From CCTV and access control to data centers and photovoltaic energy: these are some of the systems we deliver end to end.',
+    'Sistemas en los que asesoramos y acompañamos la puesta en marcha': 'Systems we advise on and support through commissioning',
+    'Desde CCTV y control de acceso hasta data center y energía fotovoltaica: estos son algunos de los sistemas en los que asesoramos y acompañamos a nuestros clientes de principio a fin.': 'From CCTV and access control to data centers and photovoltaic energy: these are some of the systems on which we advise and support our clients from start to finish.',
     'Sistemas de CCTV': 'CCTV Systems',
     'Circuitos cerrados de televisión para vigilancia perimetral e interior, con monitoreo remoto.': 'Closed-circuit television for perimeter and indoor surveillance, with remote monitoring.',
     'Diseño y acompañamiento en la instalación de circuitos cerrados de televisión (CCTV) para vigilancia perimetral e interior, con analítica de video y monitoreo remoto, integrados a la operación de seguridad del recinto.': 'Design and installation support for closed-circuit television (CCTV) for perimeter and indoor surveillance, with video analytics and remote monitoring, integrated into the site\'s security operation.',
